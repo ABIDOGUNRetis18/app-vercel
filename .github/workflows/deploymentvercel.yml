@@ -2,12 +2,12 @@ name: Deploy Fullstack to Vercel
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
     paths:
-      - 'backend/**'
-      - 'frontend/**'
-      - '.github/workflows/deploy-fullstack.yml'
+      - "backend/**"
+      - "frontend/**"
+      - ".github/workflows/**"
+
  
 jobs:
   deploy-backend:
